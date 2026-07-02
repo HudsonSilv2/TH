@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Nossa História</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== FUNDO 3D (Three.js) ===================== -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ===================== TELA DE ABERTURA ===================== -->
+<section id="opening" class="screen active">
+  <div class="opening-inner">
+    <p class="eyebrow">para você</p>
+    <h1 class="opening-title" id="opening-title">Feliz 3 anos e 7 meses,<br>meu amor.</h1>
+    <p class="opening-sub" id="opening-sub">Cada dia ao seu lado escreve uma linha nova da nossa história.</p>
+    <button id="open-btn" class="btn btn-primary">
+      <span>Abrir nossa história</span>
+    </button>
+  </div>
+  <div class="scroll-hint">um coração se formando, esperando por você</div>
+</section>
+
+<!-- ===================== EXPERIÊNCIA PRINCIPAL ===================== -->
+<main id="experience">
+
+  <!-- ---------- Contador ---------- -->
+  <section class="section" id="section-counter">
+    <p class="eyebrow">juntos há</p>
+    <div class="counter-grid" id="counter-grid">
+      <div class="counter-item"><span class="counter-number" id="c-years">0</span><span class="counter-label">anos</span></div>
+      <div class="counter-item"><span class="counter-number" id="c-months">0</span><span class="counter-label">meses</span></div>
+      <div class="counter-item"><span class="counter-number" id="c-days">0</span><span class="counter-label">dias</span></div>
+      <div class="counter-item"><span class="counter-number" id="c-hours">0</span><span class="counter-label">horas</span></div>
+      <div class="counter-item"><span class="counter-number" id="c-minutes">0</span><span class="counter-label">min</span></div>
+      <div class="counter-item"><span class="counter-number" id="c-seconds">0</span><span class="counter-label">seg</span></div>
+    </div>
+  </section>
+
+  <!-- ---------- Cartas ---------- -->
+  <section class="section" id="section-cards">
+    <p class="eyebrow">pequenos bilhetes</p>
+    <h2 class="section-title">Cartas para você</h2>
+    <div class="card-stage">
+      <button class="card-nav card-nav-prev" id="card-prev" aria-label="carta anterior">&#8592;</button>
+      <div class="card-frame" id="card-frame">
+        <!-- cartas injetadas via JS -->
+      </div>
+      <button class="card-nav card-nav-next" id="card-next" aria-label="próxima carta">&#8594;</button>
+    </div>
+    <div class="card-dots" id="card-dots"></div>
+  </section>
+
+  <!-- ---------- Timeline ---------- -->
+  <section class="section" id="section-timeline">
+    <p class="eyebrow">nossa linha do tempo</p>
+    <h2 class="section-title">O caminho até aqui</h2>
+    <div class="timeline" id="timeline">
+      <!-- itens injetados via JS -->
+    </div>
+  </section>
+
+  <!-- ---------- Galeria ---------- -->
+  <section class="section" id="section-gallery">
+    <p class="eyebrow">nossos momentos</p>
+    <h2 class="section-title">Galeria</h2>
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- fotos injetadas via JS -->
+    </div>
+  </section>
+
+  <!-- ---------- Mensagem secreta ---------- -->
+  <section class="section section-secret" id="section-secret">
+    <p class="eyebrow">só mais uma coisa</p>
+    <button id="secret-btn" class="btn btn-ghost">Revelar uma mensagem secreta</button>
+    <div class="secret-box" id="secret-box">
+      <p id="secret-text"></p>
+    </div>
+  </section>
+
+  <!-- ---------- Declaração final ---------- -->
+  <section class="section section-final" id="section-final">
+    <div class="final-frame">
+      <p class="eyebrow">para fechar, por enquanto</p>
+      <p class="final-text" id="final-text"></p>
+      <p class="final-signature" id="final-signature"></p>
+      <button id="rain-btn" class="btn btn-primary">Chover corações</button>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== CONTROLE DE MÚSICA ===================== -->
+<div id="music-toggle" class="music-toggle" title="música">
+  <svg id="music-icon-on" viewBox="0 0 24 24" class="music-icon"><path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/><circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+</div>
+<audio id="bg-music" loop preload="none"></audio>
+
+<!-- ===================== CHUVA DE CORAÇÕES (overlay) ===================== -->
+<div id="heart-rain" class="heart-rain"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
