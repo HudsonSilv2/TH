@@ -20,21 +20,21 @@ const CONFIG = {
     "Desde que você chegou, até os dias comuns ficaram especiais.",
     "3 anos e 7 meses parecem muito, mas perto do que eu quero viver com você, ainda é só o começo.",
     "Seu sorriso continua sendo uma das minhas partes favoritas do mundo.",
-    "Obrigado por ser meu carinho, minha paz e minha melhor companhia.",
-    "Eu amo cada detalhe seu, até aqueles que você nem percebe."
+    "A cada dia que passa, eu me apaixono mais por você.",
+    "Eu amo cada detalhe seu, até aqueles que você nem percebe.",
+    "...E te amar do jeito que eu imaginei..."
   ],
 
   // ---------- linha do tempo ----------
   timeline: [
-    { date: "o começo", text: "O dia em que tudo começou... " },
-    { date: "um clique no tempo", text: "Minha primeira foto favorita", image: "assets/foto14.jpg" },
-    { date: "inesquecível", text: "Um momento que nunca vou esquecer" },
+    { date: "o começo", text: "O dia em que tudo começou... Sempre pensei que por algum motivo não daria certo, então resolvi um dia falar o que eu remente sentia e fiquei alivido por o sentimento ser correspondido." },
+    { date: "um clique no tempo", text: "Minha foto favorita", image: "assets/foto14.jpg" },
+    { date: "inesquecível", text: "Um momento que nunca vou esquecer", image: "assets/foto1.jpg", smallText: "A perfeição dessa recordação que tenho de você!!" }, 
     { date: "hoje", text: "Hoje: 3 anos e 7 meses de nós", smallText: "e que venham muitos mais!" }
   ],
 
   // ---------- galeria (troque pelos caminhos reais das suas fotos) ----------
   galleryPhotos: [
-    { src: "assets/foto1.jpg", caption: "foto 1" },
     { src: "assets/foto2.jpg", caption: "foto 2" },
     { src: "assets/foto3.jpg", caption: "foto 3" },
     { src: "assets/foto4.jpg", caption: "foto 4" },
@@ -49,6 +49,7 @@ const CONFIG = {
     { src: "assets/foto13.jpg", caption: "foto 13" },
     { src: "assets/foto14.jpg", caption: "foto 14" },
     { src: "assets/foto15.jpg", caption: "foto 15" },
+    { src: "assets/foto16.jpg", caption: "foto 16" },
 
   ],
 
