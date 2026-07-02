@@ -27,7 +27,7 @@ const CONFIG = {
 
   // ---------- linha do tempo ----------
   timeline: [
-    { date: "o começo", text: "O dia em que tudo começou... Sempre pensei que por algum motivo não daria certo, então resolvi um dia falar o que eu remente sentia e fiquei alivido por o sentimento ser correspondido." },
+    { date: "o começo", text: "O dia em que tudo começou... Sempre pensei que por algum motivo não daria certo, então, um dia resolvi falar o que eu realmente sentia, e fiquei alivido pelo sentimento ser correspondido." },
     { date: "um clique no tempo", text: "Minha foto favorita", image: "assets/foto14.jpg" },
     { date: "inesquecível", text: "Um momento que nunca vou esquecer", image: "assets/foto1.jpg", smallText: "A perfeição dessa recordação que tenho de você!!" }, 
     { date: "hoje", text: "Hoje: 3 anos e 7 meses de nós", smallText: "e que venham muitos mais!" }
